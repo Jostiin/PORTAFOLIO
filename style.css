@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+
+
+body{
+    overflow: hidden;
+}
+/* GENERAL */
+a{
+    text-decoration: none;
+
+}
+a:visited, a:link{
+    color: white;
+}
+
+/*----*/
+.page{
+    background-color:  rgb(45,46,50);
+    background-color: white;
+    height: 100vh;
+    
+    
+    
+}
+.home{
+    background-color: rgb(45,46,50);
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*NAV*/
+
+.nav_{
+    display: flex;
+    padding: 50px 90px;
+    font-weight: bold;
+    width: 100vw;
+    position: fixed;
+    background-color: rgb(45,46,50);
+    z-index: 999;
+}
+.logo{
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+    margin-right: 6rem;
+    font-weight: bold;
+    position: relative;
+}
+#lastname{
+    color: rgb(128,241,180);
+    font-weight: bold;
+}
+#cursor{
+    color: white;
+    background-color: rgb(45,46,50);
+    position: absolute;
+    right: 0;
+    width: 0;
+    border-left: 1px solid white;
+    animation: maquina 5s infinite alternate steps(12);
+}
+.redirect{
+   display: flex;
+   align-items: center;
+   gap: 25px;
+   margin-right: 12rem;
+   
+}
+.redirect a{
+   padding: 20px;
+   border-radius: 5px;
+ }
+
+.apps{
+    display: flex;
+    align-items: center;
+}
+.apps a{
+    color:  rgb(45,46,50);
+    background:  rgb(128,241,180);
+    padding: 2px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+
+/*MAIN*/
+main{
+    padding-top: 10rem;
+    display:flex;
+    
+}
+.home_me{
+    margin-left: 1rem;
+}
+.aboutme{
+    margin-left: 7rem;
+}
+.fullS{
+    border-radius: 5px;
+    background-color: rgb(128,241,180);
+    width: 10rem;
+    text-align: center;
+    color:  rgb(45,46,50);
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 10rem;
+    font-weight: bold;
+}
+.f1{
+    font-size: 30px;
+    margin-top: 2rem;
+    font-weight: bold;
+    color:  rgb(45,46,50);
+}
+.f2{
+    margin-top: 1rem;
+    color: rgb(96,97,101);
+    font-weight: bold;
+}
+
+.arrow{
+    margin-top: 7rem;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    margin-left: 9rem;
+    font-weight: bold;
+    background-color: rgb(128,241,180);
+    border: none;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    align-items: center;
+    
+}
+.arrow span{
+    
+    color:  rgb(45,46,50);
+    font-size: 80px;
+    position: relative;
+    animation-name: arrow;
+    padding-top: 10px;
+    
+}
+.info{
+    margin-left: 4rem;
+    margin-top: 9rem;
+    display: flex;
+    font-weight: bold;
+}
+.Exp span,.num_proyects span{
+ font-size: 60px;
+ color:  rgb(45,46,50);
+}
+.Exp , .num_proyects{
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    
+}
+.Exp p, .num_proyects p{
+    margin-left: 20px;
+    color:  rgb(96,97,101);
+}
+/*CIRCULOS*/
+
+
+.img_Circulo{
+    width: 33rem;
+    height: 33rem;
+    border: none;
+    border-radius: 50%;
+   
+    position: absolute;
+    bottom: 11rem;
+    right: 5rem;
+    box-shadow: 0 0 10px black;
+    background-image: url("./complements/fotop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+.img_Circulo2{
+    width: 10rem;
+    height: 10rem;
+    border: none;
+    border-radius: 50%;
+   
+    position: absolute;
+    bottom: 5rem;
+    right: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    animation-name: circle2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 85;
+}
+.img_Circulo3{
+    width: 7rem;
+    height: 7rem;
+    border: none;
+    border-radius: 50%;
+  
+    position: absolute;
+    bottom: 15rem;
+    right: 34rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    animation-name: circle3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 85;
+}
+.img_Circulo4{
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 50%;
+    animation-name: circle4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    bottom: 30rem;
+    right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    z-index: 85;
+}
+/*IMAGENES CIRCULOS*/
+.img_Circulo2 img {
+    width: 90px;
+    height: 90px;
+}
+.img_Circulo3 img {
+    width: 60px;
+    height: 70px;
+}
+.img_Circulo4 img {
+    width: 80px;
+    height: 80px;
+}
+
+/*HOVER / ACTIVE */
+
+.active , .redirect a:hover{
+    background-color: rgb(128,241,180);
+}
+.apps a:hover{
+    color: white;
+}
+
+/*ANIMIACIONES*/
+
+
+
+@keyframes circle2{
+    
+    50%{
+        width: 11rem;
+        height: 11rem;
+    }
+
+}
+@keyframes circle3{
+    
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+
+}
+@keyframes circle4{
+    
+    50%{
+        width: 6rem;
+        height: 6rem;
+    }
+
+}
+
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+/*PAGE 2*/
+.page2{
+    height: 100vh;
+    background-color: white;
+    color: white;
+}
+.container2{
+    padding-top: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lenguages_programing ul li{
+    color: rgb(128,241,180);
+    list-style: none;
+    background-color: #222;
+    margin: 5px;
+    width: 25rem;
+    height: 7rem;
+    display: flex;
+   
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+.logo1 {
+    width: 50px;
+    height: 50px;
+    margin: 45px 70px;
+   
+}
+.logo2 {
+    width: 30px;
+    height: 20px;
+    margin-left: 70px;
+}
+.logo2_2 {
+    width: 30px;
+    height: 20px;
+    margin-left: 50px;
+}
+.logo2_3 {
+    width: 30px;
+    height: 20px;
+    margin-left: 80px;
+}
+.lenguages_programing{
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    height: 30rem;
+}
+.aboutMe{
+    
+    width: 30rem;
+    height: 30rem;
+
+}
+#Present{
+    color: rgb(128,241,180);
+    margin-top: 25px;
+    font-size: 40px;
+    
+}
+
+#barra{
+    color: #6c757d;
+    font-size: 30px;
+    margin-top: 38px;
+    font-size: 19px;
+}
+
+#biografie{
+    margin-top: 5rem;
+    font-size: 18px;
+    color: black;
+}
+/*PAGE 3*/
+.page3{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container3{
+    margin-top: 7rem;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.targets{
+    width: 30rem;
+    height: 15rem;
+    background-color:  rgb(45,46,50);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+    
+}
+
+.imgtt1{
+    width: 10rem;
+    height: 100%;
+    background-image: url("https://nutriciontipsucchome.files.wordpress.com/2019/05/cropped-sandia-animada-png-4.png?w=200");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(128,241,180);
+    
+}
+.imgtt2{
+    width: 10rem;
+    height: 100%;
+    background-image: url("./complements/img_proyectos/BoTube.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(128,241,180);
+    
+}
+.imgtt3{
+    width: 10rem;
+    height: 100%;
+    background-image: url("./complements/img_proyectos/GroupsUnseen.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-color:rgb(128,241,180) ;
+    
+}
+.imgtt4{
+    width: 10rem;
+    height: 100%;
+    background-image: url("./complements/img_proyectos/Asistente.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-color: rgb(128,241,180);
+    
+}
+
+.infott{
+    display: block;
+    margin: 20px;
+    color: white;
+}
+.info_check{
+    color: white;
+    font-weight: bold;
+    
+    margin-bottom: 30px;
+}
+.target_title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+}
+.resumen{
+    font-size: 15px;
+    color: white;
+}
+.infott button{
+    margin-top: 20px;
+    margin-left: 70%;
+    border: none;
+    border-radius: 10px;
+    width: 5rem;
+    height: 2rem;
+    background-color: rgb(128,241,180);
+    font-weight: bold;
+    cursor: pointer;
+}
+.infott button:hover{
+   
+    background-color: #52b788;
+    color: white;
+}
+/*PAGE4*/
+.container4{
+    width: 100%;
+}
+form{
+    
+    background-color:rgb(45,46,50);
+    padding: 20px 15rem;
+   
+}
+form h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.names{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    gap: 1em;
+}
+.correoM{
+    display: grid;
+    grid-template-rows: 1fr;
+    
+}
+
+.names input{
+    border: none;
+    
+    background-color: transparent;
+    background-color: white;
+    outline: none;
+    margin-bottom: 5px;
+    color:rgb(45,46,50) ;
+    font-size: 20px;
+ 
+    text-align: center;
+}
+.correoM input{
+    border: none;
+    margin-bottom: 5px;
+    background-color: transparent;
+    background-color: white;
+    outline: none;
+    color: rgb(45,46,50);
+    font-size: 20px;
+    text-align: center;
+    
+   
+}
+.correoM textarea{
+    border: none;
+    
+    background-color: transparent;
+    background-color: white;
+    outline: none;
+    resize: none;
+    color: rgb(45,46,50);
+    font-size: 20px;
+  
+   
+    
+}
+form button{
+    margin-top: 5px;
+    background-color:rgb(128,241,180);
+    width: 100%;
+    font-size: 20px;
+    height: 2rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+form button:hover{
+    background-color:#52b788;
+}
+/*PAGE 5*/
+.page5{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    align-items: center;
+    justify-content: center;
+}
+.container5{
+    margin-top: 18rem;
+}
+.carrucel{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    width: 40rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    width: 50rem;
+    height: 20rem;
+    
+}
+
+
+.arrowLeft{
+    text-align: center;
+    flex-grow: 1;
+    color: rgb(128,241,180);
+    border: none;
+    background-color: transparent;
+    font-size: 80px;
+    cursor: pointer;
+}
+.arrowRight{
+    text-align: center;
+    flex-grow: 1;
+    color: rgb(128,241,180);
+    border: none;
+    background-color: transparent;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+
+.caracteristicas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    position: relative;
+    flex-grow: 2;
+
+    
+}
+
+.BoxC {
+    opacity: 0;
+    transition: opacity .2s;
+    width: 90%;
+    height: 100%;
+    display:flex;
+    position:absolute;
+    border: 5px solid rgb(128,241,180);
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    
+}
+
+.BoxC img{
+    width: 60px;
+    height: 60px;
+    padding: 60px;
+    padding-right: 0;
+}
+.BoxC_div{
+    
+    padding: 60px;
+    padding-left: 40px
+}
+.BoxC_div h3{
+    
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.BoxC_div p{
+   font-size: 25px;
+   color: #6c757d;
+   
+}
+.on{
+    opacity: 1;
+    
+}
+/*ANIMATE*/
+.animate__animated.animate__fadeOutDown{
+    --animate-duration:1s;
+    animation-iteration-count: infinite;
+}
